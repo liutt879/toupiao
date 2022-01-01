@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.css">
+<script src="bootstrap-4.4.1-dist/jquery-3.0.0.min.js"></script>
+<script src="bootstrap-4.4.1-dist/popper.min.js"></script>
+<script src="bootstrap-4.4.1-dist/js/bootstrap.js"></script>
+</head>
+<body
+	style="background: url(photos/a.jpg) no-repeat; background-size: 100% 100%; background-attachment: fixed;">
+	<div class="container">
+		<%@include file="nav.html%>
+		<div class="row" style="margin-top: 10px">
+			<%@include file="lf.html"%>
+			<div class="col-lg-9">
+				<div class="card">
+					<div class="card-header">用户注册</div>
+					<div class="card-body">
+						<div>
+							<h2>用户注册成功，注册信息如下：</h2>
+							<p>用户名：${username}</p>
+							<p>密码：${password}</p>
+							<p>性别：${sex}</p>
+							<p>出生年月：${birth}</p>
+							<p>邮箱：${mail}</p>
+							<p>手机号：${phone}</p>
+							<p>注册时间：${regTime}</p>
+							<p>IP地址：${ip}</p>
+							<div class="col-lg-4">
+								<img alt="" src="photo/${myImg}" style="width: 90%">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="login.html">返回登录</a>
+		</div>
+
+	</div>
+
+</body>
+</html>

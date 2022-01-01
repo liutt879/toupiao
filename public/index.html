@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.css">
+<script src="bootstrap-4.4.1-dist/jquery-3.0.0.min.js"></script>
+<script src="bootstrap-4.4.1-dist/popper.min.js"></script>
+<script src="bootstrap-4.4.1-dist/js/bootstrap.js"></script>
+<style type="text/css">
+body {
+	background: url(photos/a.jpg);
+}
+</style>
+</head>
+<body style="background: url(photos/a.jpg) no-repeat;background-size:100% 100%;background-attachment:fixed;" method="POST">
+	<div class="container">
+		<!-- 导航条 -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href=" ">${title }</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active"><a class="nav-link" href="#">190110910618   19计算机2
+							<span class="sr-only">(current)</span>
+					</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">刘婷</a></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown" role="button" aria-haspopup="true"
+						aria-expanded="false"><span
+							class="caret"></span></a> 
+							
+							<c:if test="${username!=null}">
+							<ul class="dropdown-menu">
+								<li><a href="lead-log.html">管理员登陆</a></li>
+								<li><a href="newpwd.html">修改密码</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="LoginOut">注销</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">One more separated link</a></li>
+							</ul>
+						</c:if></li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0" action="QueryUser">
+					<input class="form-control mr-sm-2" type="search"
+						placeholder="Search" aria-label="Search" name="search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			</div>
+		</nav>
+	
+		<div class="row" style="margin-top: 10px">
+
+			<div class="col-lg-3">
+				<div class="list-group" >
+					<a href="index.html" class="list-group-item list-group-item-action" style="background:url(photos/h.jpg); opacity:0.8;">首页</a>
+					<a href="login.html" class="list-group-item list-group-item-action" style="background:url(photos/h.jpg); opacity:0.8;">用户登录</a>
+					<a href="reg.html" class="list-group-item list-group-item-action" style="background:url(photos/h.jpg); opacity:0.8;">用户注册</a>
+					<a href="projectlist.html" class="list-group-item list-group-item-action" style="background:url(photos/h.jpg); opacity:0.8;">投票项目列表</a>
+					<a href="fabu-pro.html" class="list-group-item list-group-item-action" style="background:url(photos/h.jpg); opacity:0.8;">投票项目发布</a>
+					
+				</div>
+			</div>
+
+			<div class="col-lg-6">
+
+
+				<div class="jumbotron">
+					<h1 class="display-4">Hello, world!</h1>
+					<p class="lead">This is a simple hero unit, a simple
+						jumbotron-style component for calling extra attention to featured
+						content or information.</p>
+					<hr class="my-4">
+					<p>It uses utility classes for typography and spacing to space
+						content out within the larger container.</p>
+					<a class="btn btn-primary btn-lg" href="download/在线投票系统说明.doc" role="button">下载项目说明</a>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</body>
+</html>
