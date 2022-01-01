@@ -12,7 +12,7 @@
 <body style="background: url(photos/a.jpg) no-repeat;background-size:100% 100%;background-attachment:fixed;">
 	<div class="container" class="row bg">
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<a class="navbar-brand" href=" ">${title }</a>
+			<a class="navbar-brand" href=" "></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse"
 				data-target="#navbarSupportedContent"
 				aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -28,7 +28,7 @@
 					<li class="nav-item"><a class="nav-link" href="#">刘婷</a></li>
 					<li class="dropdown"><a href="#" class="dropdown-toggle"
 						data-toggle="dropdown" role="button" aria-haspopup="true"
-						aria-expanded="false">${username==null?"未登录":username} <span
+						aria-expanded="false"><span
 							class="caret"></span></a> 
 							
 							<c:if test="${username!=null}">
@@ -56,14 +56,13 @@
 		<a href="index.html" class="list-group-item list-group-item-action" style="background:url(photos/h.jpg); opacity:0.8;">首页</a>
 		<a href="login.html" class="list-group-item list-group-item-action" style="background:url(photos/h.jpg); opacity:0.8;">用户登录</a>
 		<a href="reg.html" class="list-group-item list-group-item-action" style="background:url(photos/h.jpg); opacity:0.8;">用户注册</a>
-		<a href="ProjectList" class="list-group-item list-group-item-action" style="background:url(photos/h.jpg); opacity:0.8;">投票项目列表</a>
+		<a href="list.html" class="list-group-item list-group-item-action" style="background:url(photos/h.jpg); opacity:0.8;">投票项目列表</a>
 		<a href="fabu-pro.html" class="list-group-item list-group-item-action" style="background:url(photos/h.jpg); opacity:0.8;">投票项目发布</a>
 		
 	</div>
 </div>
 			<div class="col-lg-9">
-				<div >
-					<div><%=returnval%></div>					
+				<div >					
 					<div class="card-header">用户注册</div>
 					<div class="card-body">
 						<form method="GET" action="/rec">

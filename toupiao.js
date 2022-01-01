@@ -89,6 +89,11 @@ const Pro=require('./db/pro')
       }
    })
 })
+app.use('/list0',(req,res)=>{
+   Pro.find({},(err,doc)=>{
+      res.send(doc)
+   })
+})
 Pro.find({}).then(doc=>{
    module.exports.data=arttemplate('projectlist.html',{data:doc})
 })
